@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio Webpage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type= "text/css" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+    <script src = "js/main.js"></script>
+</head>
+<body>
+ <header>
+    <!-- <div id="page-container">
+     <div id="content-wrap"> -->
+        <div class="container">
+            <div class = "row no-gutters ">
+                 <div class = "col-lg-3 col-md-3">
+                     <img src= "img/shivFresh.jpg">
+                </div>
+                <div class = "col-lg-9 col-md-9">
+                    <div class = "d-flex flex-column">
+                        <div class= "p-5 bg-dark">
+                            <div class = "d-flex flex-row justify-content-between align-items-center">
+                             <h1>R Shivsundar</h1>
+                                <h4>Student, Web Developer</h4>
+                            </div>
+                        </div>
+                        
+                        <div class = "p-3 text-white bg-black">
+                            Pursuing B.E. Computer Science at Bits Goa
+                        </div> 
+                        <div class = "d-flex flex-row">
+                            <div class = "p-4 bg-green font-div" data-toggle="collapse" data-target="#home">
+                                <i class="fa fa-home align-self-center fa-2x  d-block hometags"></i> Home
+                            </div>
+                            <div class = "p-4 bg-danger font-div" data-toggle="collapse" data-target="#resume">
+                                <i class="fa fa-graduation-cap align-self-center fa-2x d-block hometags"></i>Resume
+                            </div>
+                            <div class = "p-4 bg-primary font-div " data-toggle="collapse" data-target="#educate">
+                                <i class="fa fa-pencil align-self-center fa-2x d-block hometags"></i> Education
+                            </div>
+                            <div class = "p-4 bg-warning font-div" data-toggle="collapse" data-target="#contact">
+                                <i class="fa fa-envelope align-self-center fa-2x  d-block hometags"></i>Contact
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</header>
+
+<div class = "container">
+    <div class = "collapse" id = "home">
+        <div class = "p-5 bg-green">
+            <h1>About</h1>
+            <p style="font-size: large;">I am R Shivsundar. I am currently in my 1st year of undergraduation at Bits-Goa</p>
+            <p>I am really interested in mathematical logic and computing</p>
+        </div>
+        <div class = "card card-body text-align: center" style = "border-color: darkblue;">
+            <h2 >Skills</h2>
+        </div>
+        <div id = "containe" style = "width:100%; height:500px"></div>
+    </div>
+
+
+        <div class = "collapse" id = "resume">
+            <div class = "p-5 bg-danger">
+                <h1>My Resume</h1>
+                <p style = "font-size:larger;">I have not had any work experience till now..I have done 2 projects which I have listed below</p>
+            </div>
+            <div class = "card card-body">
+               <h2>My Projects</h2>
+               <h4>1)  Chat Application using Files(without sockets,threading) in C++</h4>
+                <h6>       Date: 12th December 2018</h6>
+               <h5></h5>
+               <h4>2) My PortFolio Website</h4>
+               <h6>        Date: 24th February 2020</h6>
+
+            </div>
+
+       </div>
+
+       <div class = "collapse" id = "educate">
+            <div class = "p-3" style = "background-color:royalblue">
+                <h2>Studied at P S Senior Secondary School, Chennai</h2>
+                <h4>    From Grade I till Grade XII</h4>
+            </div>
+            <div class = "p-3" style = "background-color:salmon;">
+                <h2>Currently Studying B.E Computer Science at Bits-Pilani Goa Campus</h2>
+                <h4>1st Year- 2nd Semester going on</h4>
+            </div>
+
+       </div>
+
+       <div class = "collapse" id = "contact">
+           <div class = "p-5 align-self-center justify-content-center text-align:center bg-warning">
+                <h1>Contact Me :
+                    <button onclick= "window.location.href = 'https://www.facebook.com/shivsundar.r.10';"><i class="fa fa-facebook"></i></button>
+                <button onclick= "window.location.href = 'https://www.instagram.com/shivsundar2001/';"><i class="fa fa-instagram"></i></button>
+                </h1>
+           </div>
+           <div style = "background-color:black; color: white; text-align: center;">
+               <h2>Name: R Shivsundar</h2> 
+               <h2>Email: rshiva1405@gmail.com</h2>
+               <h2>Ph No :239742892</h2>
+           </div>
+       </div>
+
+</div>
+
+
+    <div class = "container">
+     <footer class = "p-5 bg-dark text-center ">
+         <button class = "btn text-white" onclick = "href src = ''">
+            <i class = "fa fa-download fa-2x"> </i> Download Resume 
+         </button>
+     </footer> 
+    </div>                   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('.font-div').click(function() {
+            $('.collapse').collapse('hide');
+        });
+    </script>
+</body>
+</html>
